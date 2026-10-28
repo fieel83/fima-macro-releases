@@ -1,0 +1,109 @@
+{
+  "scope": "Isolated GitHub Windows VM; native installer and unauthenticated Hub only",
+  "hostDesktopUsed": false,
+  "authenticatedCustomerFlow": false,
+  "publicUpdaterTested": false,
+  "searchUiTested": false,
+  "stages": [
+    {
+      "stage": "download-integrity",
+      "sha256": "04fd6028033422530a57ce11193bceaf76977947bf7337e546c0c24d6e4890ea",
+      "pass": true,
+      "version": "1.0.133"
+    },
+    {
+      "stage": "download-integrity",
+      "sha256": "633f0f99ecb3b26ee2cd2362b4cf37f99d92105b7a1c546742d9b7ddb29a7465",
+      "pass": true,
+      "version": "1.0.134"
+    },
+    {
+      "stage": "download-integrity",
+      "sha256": "d7fbf89f4e4636363f8e1cca13b9c248db79abdc1368b1dd70b037d773e3153a",
+      "pass": true,
+      "version": "1.0.135"
+    },
+    {
+      "exitCode": 0,
+      "stage": "native-install",
+      "pass": true,
+      "version": "1.0.133.0"
+    },
+    {
+      "stage": "profile-file-preservation",
+      "pass": true,
+      "scope": "Existing profile sentinel; authenticated session not tested",
+      "version": "1.0.133.0"
+    },
+    {
+      "exitCode": 0,
+      "stage": "native-install",
+      "pass": true,
+      "version": "1.0.134.0"
+    },
+    {
+      "stage": "profile-file-preservation",
+      "pass": true,
+      "scope": "Existing profile sentinel; authenticated session not tested",
+      "version": "1.0.134.0"
+    },
+    {
+      "hung": false,
+      "title": "FIMA",
+      "version": "1.0.134.0",
+      "stage": "native-Hub-window",
+      "pass": true,
+      "visible": true
+    },
+    {
+      "noErrorDialog": true,
+      "screenshot": "native-1.0.134-isolated-vm.png",
+      "seconds": 20,
+      "version": "1.0.134.0",
+      "stage": "native-window-stability",
+      "pass": true
+    },
+    {
+      "exitCode": 0,
+      "stage": "native-install",
+      "pass": true,
+      "version": "1.0.135.0"
+    },
+    {
+      "stage": "profile-file-preservation",
+      "pass": true,
+      "scope": "Existing profile sentinel; authenticated session not tested",
+      "version": "1.0.135.0"
+    },
+    {
+      "hung": false,
+      "title": "FIMA",
+      "version": "1.0.135.0",
+      "stage": "native-Hub-window",
+      "pass": true,
+      "visible": true
+    },
+    {
+      "noErrorDialog": true,
+      "screenshot": "native-1.0.135-isolated-vm.png",
+      "seconds": 20,
+      "version": "1.0.135.0",
+      "stage": "native-window-stability",
+      "pass": true
+    },
+    {
+      "stage": "Start-Menu-shortcut",
+      "pass": true,
+      "note": "Shortcut presence only; Windows Search UI acceptance remains pending",
+      "links": [
+        {
+          "targetExists": true,
+          "target": "C:\\Users\\runneradmin\\AppData\\Local\\Programs\\FIMA\\FIMA.exe",
+          "arguments": "",
+          "name": "FIMA.lnk"
+        }
+      ]
+    }
+  ],
+  "result": "PASS_NATIVE_INSTALL_UPGRADE_AND_UNAUTHENTICATED_HUB_WINDOW"
+}

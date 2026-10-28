@@ -1,0 +1,31 @@
+name: FIMA Hub reviewed public release
+on:
+  workflow_dispatch:
+    inputs:
+      target:
+        description: Exact reviewed main commit SHA
+        type: string
+        required: true
+      release_id:
+        description: Exact staged Hub draft release ID
+        type: string
+        required: true
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: fima-hub-public-release
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main' && github.actor_id == '215785493'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Verify exact signed candidate, native evidence and owner authority before publication
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/publish-hub.mjs

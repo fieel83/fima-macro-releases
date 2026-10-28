@@ -1,0 +1,25 @@
+{
+  "product": "FIMA Hub",
+  "version": "1.0.135",
+  "tag": "v1.0.135",
+  "ownerId": 215785493,
+  "installer": {
+    "name": "FIMA-1.0.135-x64.exe",
+    "size": 107328661,
+    "sha256": "d7fbf89f4e4636363f8e1cca13b9c248db79abdc1368b1dd70b037d773e3153a"
+  },
+  "manifest": {
+    "name": "hub-release-signed.json",
+    "sha256": "0c33945ffc91a15526ac15486155403c19fe6c6d2c99045ff493f20f7e38923f"
+  },
+  "native": {
+    "name": "hub-native-acceptance.json",
+    "sha256": "dc2e97b727c081a9870e4258bdb697fe4d29de6a80018797ae7f912bc7c80f0b",
+    "run": "https://github.com/fieel83/fima-backend/actions/runs/40619703897",
+    "commit": "a6752f3fad8bc4ec8894c2cc3438939f3ee3b5b5"
+  },
+  "asarSha256": "ac9d6d3712236460858d4ef6597e771e956fb6dd5a5dd1c875b67b23c308aa40",
+  "acceptanceScope": "Native Windows 133 to 134 to 135 installation, profile sentinel preservation and unauthenticated Hub window. Authenticated Macro runtime, payment delivery and Windows Search UI are not accepted by this release.",
+  "sourceProvenance": "Reviewed local production snapshot; installer and bundled application hashes identify this candidate. No clean Hub source commit is claimed.",
+  "authenticode": "Not provided; pinned Ed25519 manifest and SHA256 verified. Windows may display an unsigned publisher warning."
+}

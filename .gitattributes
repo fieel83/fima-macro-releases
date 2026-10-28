@@ -1,0 +1,3 @@
+releases/**/*.json -text
+*.mjs text eol=lf
+*.yml text eol=lf
