@@ -1,0 +1,21 @@
+{
+  "at": "2026-10-28T03:47:50.318Z",
+  "variant": "Member",
+  "version": "1.0.132",
+  "verifiedExecutableSha256": "ebbb3000070e5d6bb8a3d3ce2243e6a7e57cad706ef108576532c52965be72f8",
+  "result": {
+    "ok": true,
+    "code": "launched",
+    "productId": "fima-macro",
+    "pid": 43928
+  },
+  "native": {
+    "pid": 43928,
+    "isolatedDesktop": true,
+    "inputDesktopSwitched": false,
+    "launched": true,
+    "visibleWindows": 4,
+    "responsiveWindows": 4,
+    "exitCode": 0
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "at": "2026-10-28T03:48:42.969Z",
+  "variant": "Owner",
+  "version": "1.0.132",
+  "verifiedExecutableSha256": "427c3b5859c862a482358fbc4533996322067156abe35c10d9f0e14987239302",
+  "result": {
+    "ok": true,
+    "code": "launched",
+    "productId": "fima-macro-owner",
+    "pid": 11944
+  },
+  "native": {
+    "pid": 11944,
+    "isolatedDesktop": true,
+    "inputDesktopSwitched": false,
+    "launched": true,
+    "visibleWindows": 4,
+    "responsiveWindows": 4,
+    "exitCode": 0
+  }
+}

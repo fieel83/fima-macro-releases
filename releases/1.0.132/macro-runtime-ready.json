@@ -1,0 +1,26 @@
+{
+  "at": "2026-10-28T03:59:15.870Z",
+  "scope": "Production database runtime_client_ready events, account and session identifiers excluded; client-reported evidence corroborated by native responsiveness evidence.",
+  "receipts": [
+    {
+      "createdAt": "2026-10-28T03:47:55.181Z",
+      "metadata": {
+        "productId": "fima-macro",
+        "appVersion": "1.0.132",
+        "clientReported": true,
+        "packageIdentity": "b4742c71743f51d866a125764e2eb5daa6f72af845c7026a9b775e34e03de1a5",
+        "executableSha256": "ebbb3000070e5d6bb8a3d3ce2243e6a7e57cad706ef108576532c52965be72f8"
+      }
+    },
+    {
+      "createdAt": "2026-10-28T03:48:48.429Z",
+      "metadata": {
+        "productId": "fima-macro-owner",
+        "appVersion": "1.0.132",
+        "clientReported": true,
+        "packageIdentity": "73020d0e3a1ee4736bebf0a00ea66450496185ea0b4dab515c87561750b0db8b",
+        "executableSha256": "427c3b5859c862a482358fbc4533996322067156abe35c10d9f0e14987239302"
+      }
+    }
+  ]
+}

@@ -1,0 +1,463 @@
+{
+  "signatureAlgorithm": "ed25519",
+  "signature": "X77RmgwO5AzPwyeim8DCz+zJAkvAcFNqZtjnYNL5IMRu5X83aTTsNc5ZVJ1RWnZ+cV5JbdDCAw0Wp9S0Vu8LCg==",
+  "manifest": {
+    "format": "fima-update-manifest-v1",
+    "schemaVersion": 1,
+    "productId": "fima-macro-owner",
+    "version": "1.0.132",
+    "channel": "owner-candidate",
+    "files": [
+      {
+        "path": "Assets/admin-macro-overrides.json",
+        "size": 47217,
+        "sha256": "dcd73a5cb2832e958df9f54ffc16c8599119990cf69a7683a1cc7b7942b5dc54"
+      },
+      {
+        "path": "Assets/community_profile.jpg",
+        "size": 137819,
+        "sha256": "88089f54175f2a07bcef27cb28b9225171a74dfbc35d303a611c0759781bdcd7"
+      },
+      {
+        "path": "Assets/community_profile.png",
+        "size": 1697948,
+        "sha256": "838f0ce307da3a363c394b74fdf76e58869dd0ba00cd933a367f70d147d2c5fe"
+      },
+      {
+        "path": "Assets/fieels_store.png",
+        "size": 1360905,
+        "sha256": "d6ba30c1dd4fa4f504831982611b8a96d74fd716c766ba7fe46d973f6e643d07"
+      },
+      {
+        "path": "Assets/fima_app.ico",
+        "size": 12103,
+        "sha256": "9315ae83a0d8065b60c24ec9d83799106e4274b1828431f64fa0cc0eea5dc926"
+      },
+      {
+        "path": "Assets/fima_key_screen_hero.png",
+        "size": 2159671,
+        "sha256": "b5d86b05843247b7dc3d6aa52401bed1bd79321b0c6bf83e7ccf80ed0702a37d"
+      },
+      {
+        "path": "Assets/fima_logo.png",
+        "size": 10719,
+        "sha256": "e09f57074314c5b7acb4cedec6d722ecdf20533737c59b93b050ae98209e8710"
+      },
+      {
+        "path": "Assets/fima_splash_logo.png",
+        "size": 10719,
+        "sha256": "e09f57074314c5b7acb4cedec6d722ecdf20533737c59b93b050ae98209e8710"
+      },
+      {
+        "path": "Assets/Fonts/Another Danger Slanted - Demo.otf",
+        "size": 45572,
+        "sha256": "abf7cdb1550980afdcd98581acc7c60e9cb6b23d442f5dc97febdefd18e485f5"
+      },
+      {
+        "path": "Assets/Fonts/CinzelDecorative-Bold.otf",
+        "size": 84004,
+        "sha256": "424a03286933c3a81f7408e0e2b9e1d3aa7cfb10312bfeac08ce97e068519b3a"
+      },
+      {
+        "path": "Assets/Fonts/Daydream DEMO.otf",
+        "size": 20216,
+        "sha256": "7394a7524cade9f546ab48defc437b3bd5dd5c200e0d3681fd5bb7a849994227"
+      },
+      {
+        "path": "Assets/Fonts/Energy.ttf",
+        "size": 27432,
+        "sha256": "7fc60e9d515c6d82bf1f5b68850856594808fa0d7aed2e30ca8b25a53b54bd52"
+      },
+      {
+        "path": "Assets/Fonts/Ethnocentric-Regular.otf",
+        "size": 68388,
+        "sha256": "4d7ab140b0510b38e8714c5f64ce0f6bea7aa1ef5346e9565de20901eac40247"
+      },
+      {
+        "path": "Assets/Fonts/Gohan.ttf",
+        "size": 21700,
+        "sha256": "3f2eba09922b0603a697fda7d7122c636c7186f0ac4d1e81455dc12c4c35d0d5"
+      },
+      {
+        "path": "Assets/Fonts/LEMONMILK-Regular.otf",
+        "size": 34568,
+        "sha256": "de77a61b842958dc4efbefccb5532824f2d5efd738ff5fecc0d5d6eb6528896b"
+      },
+      {
+        "path": "Assets/Fonts/Les Flos Sage.otf",
+        "size": 93340,
+        "sha256": "ce5ccd8aec62ee33966e16903bc745b5ec8db5f9d33a019911556e84f7a04293"
+      },
+      {
+        "path": "Assets/Fonts/Matcha Cih.otf",
+        "size": 72932,
+        "sha256": "55cfffcd686e002407f4731b5630b62477b376955d41c66ac2c088106e478f39"
+      },
+      {
+        "path": "Assets/Fonts/OldLondon.ttf",
+        "size": 50244,
+        "sha256": "795350fac9df1b8f665a82ed23e82c3f6bf592ef32d25a924986bf3172738f91"
+      },
+      {
+        "path": "Assets/Fonts/ROMANTIC.TTF",
+        "size": 57996,
+        "sha256": "321e8265234f6a885d93a2d20dcc3d2b1bac8252f351bbf8732f697fe9978e94"
+      },
+      {
+        "path": "Assets/Fonts/Starborn.otf",
+        "size": 27808,
+        "sha256": "ff26650adcaebb6f34844543634da83415c65f4a45bbaffdfcbded75ccd46fff"
+      },
+      {
+        "path": "Assets/Fonts/Starfruit.otf",
+        "size": 51348,
+        "sha256": "bab500e3b486cd92d798fd625a9f6478660941c2373fb1e722c7f5a169fa30ef"
+      },
+      {
+        "path": "Assets/Fonts/Strong.ttf",
+        "size": 39776,
+        "sha256": "47447ef9dd51e6c8c65a04317b2a56356eaec3a6711c895dd8849a718d6ef288"
+      },
+      {
+        "path": "Assets/Fonts/SuperMario256.ttf",
+        "size": 16312,
+        "sha256": "6e9eef4f6def32280211c41fad0e09eda950937e3b0dfe813911e9927752742a"
+      },
+      {
+        "path": "Assets/Fonts/The Amazing Spider-Man.ttf",
+        "size": 194776,
+        "sha256": "264ef25ad0dc0e2b42232357445f4370ab0e0eee4cf6152e1d6e51e6d703ddde"
+      },
+      {
+        "path": "Assets/Fonts/THEBOLDFONT-FREEVERSION.ttf",
+        "size": 15448,
+        "sha256": "5751022bdfe00903cf6ec5d4a8d23920952ecc213169bbaf19f28d8dedc54339"
+      },
+      {
+        "path": "Assets/Fonts/ThisAppeal-FreeDemo.ttf",
+        "size": 11928,
+        "sha256": "fc5bdca791a5e53b7a2604fe4321d230b1ae7d8271755508d78b264292f7e49d"
+      },
+      {
+        "path": "Assets/Fonts/Trend Bold.otf",
+        "size": 29152,
+        "sha256": "a976656471201f9068fb52f83051467e4acd4eb2ef53c3cbb801d5b74bfd12ff"
+      },
+      {
+        "path": "Assets/Fonts/Zeus Borne.otf",
+        "size": 44292,
+        "sha256": "931753ae15634435996c54bab5ffb503a57d4437045b89e7d2d8bd0d886f1fa4"
+      },
+      {
+        "path": "Assets/graffiti_bg.png",
+        "size": 1886656,
+        "sha256": "dd29c485ced2367408637575d83187de14531df71547540c52d620f6f375825f"
+      },
+      {
+        "path": "Assets/Home/HomeBlue 1.png",
+        "size": 1882188,
+        "sha256": "72479885fa9c0e7f645c7403368113bd13fdd30e0c5c7e9e606a7fa7aad10735"
+      },
+      {
+        "path": "Assets/Home/HomeBlue 2.png",
+        "size": 1666432,
+        "sha256": "8578bbdb2839f57b6918f1f65ef63109fbbfc44d1ad1c110f66f675ee318c062"
+      },
+      {
+        "path": "Assets/Home/HomeDarkPlum 1.png",
+        "size": 2105780,
+        "sha256": "94c7c8c461dd1a0afd6cb6ee5b78c9404eede65a641808791a520846de25b1bf"
+      },
+      {
+        "path": "Assets/Home/HomeDarkPlum 2.png",
+        "size": 2118978,
+        "sha256": "ea1f1523b26e639952ba79ada2537575a4d883683016b82fbb39ff15a082dcdc"
+      },
+      {
+        "path": "Assets/Home/HomePurble 1.png",
+        "size": 2108490,
+        "sha256": "c538b4c9dce2b64b0fdb68f38529472ca1d1bee7e1257c854432fabdd67df8bc"
+      },
+      {
+        "path": "Assets/Home/HomePurble 2.png",
+        "size": 1965529,
+        "sha256": "f97f1befaed2590c06a657e651d9eff105a9a09357222b85f310728fea43dd16"
+      },
+      {
+        "path": "Assets/Home/HomeRed 1.png",
+        "size": 2029132,
+        "sha256": "e3d207fede7e3c4851931cd8587cb7eebf8ead805a0950ad0ca063ca1841c280"
+      },
+      {
+        "path": "Assets/Home/HomeRed 2.png",
+        "size": 2206757,
+        "sha256": "f4ce6fba0b440bb3199bf72d06f8bd48de91376199dd884d0a9e9234b25ed90e"
+      },
+      {
+        "path": "Assets/language_icon.png",
+        "size": 22471,
+        "sha256": "37ac044482262671fd5f0d168ec7c23b172979f82ed707f69ab1a3b694da32ff"
+      },
+      {
+        "path": "Assets/pfp.png",
+        "size": 315897,
+        "sha256": "31ba4ff796b01d0d4098978a4f33047b764641645acfefde319ef0d30c60a669"
+      },
+      {
+        "path": "Assets/potentials_store.png",
+        "size": 1280738,
+        "sha256": "e5b0ecde4b5f3ee7f6ade4110ff35c33c6ecefeda31d74b105c0c526005c306b"
+      },
+      {
+        "path": "Assets/Sounds/disable.mp3",
+        "size": 35108,
+        "sha256": "d0d6473f9106bc028fb0503646a46be5d44382ace506c3339026106e854099e5"
+      },
+      {
+        "path": "Assets/Sounds/enable.mp3",
+        "size": 26400,
+        "sha256": "fb4419c2fd3ff1965da50e828a9077f5d52fc8ac2336ac7564a57f68f8455332"
+      },
+      {
+        "path": "Assets/TutorialPosters/10tiles.jpg",
+        "size": 10710,
+        "sha256": "6cd9daa84f9363566a821030df3448faa0c83ca1834fe9b6b77a73383afe3f6e"
+      },
+      {
+        "path": "Assets/TutorialPosters/3-m1-resets.jpg",
+        "size": 12056,
+        "sha256": "0c942629872b499db4a66ebde8d34f74899762a39cda4f3212419d6806ffbb7d"
+      },
+      {
+        "path": "Assets/TutorialPosters/backdash-cancel-1.jpg",
+        "size": 11843,
+        "sha256": "721f261cce78fbb2dfcac31ed1858bf9c20bbb733b75a478cf8aadd9dca6fd6a"
+      },
+      {
+        "path": "Assets/TutorialPosters/backdash-cancel-2.jpg",
+        "size": 11073,
+        "sha256": "774ded6c8e6490fb95bc6d513b306b2396c2b6ae4574cef6aadd8ffc5de192a5"
+      },
+      {
+        "path": "Assets/TutorialPosters/backdash-cancel-3.jpg",
+        "size": 4784,
+        "sha256": "80e90e248c011480a0ef7f17c95d61283e13956fe6b9aabb2756567301b58c4e"
+      },
+      {
+        "path": "Assets/TutorialPosters/backdash-cancel-4.jpg",
+        "size": 11600,
+        "sha256": "3f43a2c2a641671200486f12a76ac106b62876182eabfe8677ca0658c4836f3c"
+      },
+      {
+        "path": "Assets/TutorialPosters/durations.json",
+        "size": 650,
+        "sha256": "e36eae62510d1f18ea8d968241aaa1af4b17bfa06c4c247c7c3df0903091ace8"
+      },
+      {
+        "path": "Assets/TutorialPosters/emote-bdc.jpg",
+        "size": 10611,
+        "sha256": "9a3a39551d36255724295fa53316260a16d56ce4bc82b2f20ce2f1aac053837b"
+      },
+      {
+        "path": "Assets/TutorialPosters/fastgarou-1-3.jpg",
+        "size": 10651,
+        "sha256": "5153a3f8f4578a447f9ad5aeda344f7e04ec32b46a7a2864952d85a520e8fe18"
+      },
+      {
+        "path": "Assets/TutorialPosters/instant-twisted.jpg",
+        "size": 12941,
+        "sha256": "2acc143f9c1cbecfae0a114da0900fcfa46538fb9208107fb61405fe02bb28ff"
+      },
+      {
+        "path": "Assets/TutorialPosters/kakyo-tech.jpg",
+        "size": 10637,
+        "sha256": "3c181bb7aa9de71670c0354fa153592cb93cefe391d428f57862d36975b47420"
+      },
+      {
+        "path": "Assets/TutorialPosters/kyoto.jpg",
+        "size": 12172,
+        "sha256": "9d15f665cea9fdcee9c227e2189c268c8b495fefbbca2b00c19fdd2ae3fed2fb"
+      },
+      {
+        "path": "Assets/TutorialPosters/left-instanttwi.jpg",
+        "size": 12941,
+        "sha256": "2acc143f9c1cbecfae0a114da0900fcfa46538fb9208107fb61405fe02bb28ff"
+      },
+      {
+        "path": "Assets/TutorialPosters/lethal-dash.jpg",
+        "size": 11862,
+        "sha256": "febbc688b9e3127dd2e7758ab1cd583671d2521240d173168d9dc869731b55fd"
+      },
+      {
+        "path": "Assets/TutorialPosters/loop-dash.jpg",
+        "size": 11309,
+        "sha256": "afaaf3b2af6deb433e712cface2c21355827de2d8c3f4d41410eb3bc3b83d9ff"
+      },
+      {
+        "path": "Assets/TutorialPosters/no-shiftlock-void.jpg",
+        "size": 11518,
+        "sha256": "eec77724d6ad3ff9c2300ac91aba98f4b238898b78ccb33bfc604115f0722b87"
+      },
+      {
+        "path": "Assets/TutorialPosters/normal-supa.jpg",
+        "size": 14852,
+        "sha256": "0634ec06df65a05c61393aac5785db5b5c106469edbc70b174cef8f9aa8122c7"
+      },
+      {
+        "path": "Assets/TutorialPosters/normal-void.jpg",
+        "size": 12546,
+        "sha256": "71da4f44c509e6d542d62e82012eb150cf6904b3f7cf36ca56bb428c2dbe947f"
+      },
+      {
+        "path": "Assets/TutorialPosters/right-instanttwi.jpg",
+        "size": 12941,
+        "sha256": "2acc143f9c1cbecfae0a114da0900fcfa46538fb9208107fb61405fe02bb28ff"
+      },
+      {
+        "path": "Assets/TutorialPosters/shove-m1-reset.jpg",
+        "size": 8038,
+        "sha256": "6db72ce4b7ad53b2408dd59471e70b1633887aa8332a80be53e08e7e2c05ebc3"
+      },
+      {
+        "path": "Assets/TutorialPosters/side-dash-cancel.jpg",
+        "size": 14710,
+        "sha256": "629f9323419f36a5f8ca991c6bf6bcec34e47da644ad4e0f855a0e254364a52d"
+      },
+      {
+        "path": "Assets/TutorialPosters/true-downslam.jpg",
+        "size": 14500,
+        "sha256": "aa8447935d208648664143c32c133e37e22622db8b05f6fff5c59ca8f10abf69"
+      },
+      {
+        "path": "Assets/TutorialVideos/10tiles.mp4",
+        "size": 2282679,
+        "sha256": "c91e201e4fde0023e0363e5e32af2984d264b47c780450dc7e5053c3d540322b"
+      },
+      {
+        "path": "Assets/TutorialVideos/3-m1-resets.mp4",
+        "size": 742433,
+        "sha256": "d38293c5bdf12d8cc16532c5a3dac8d3043ed4215b730a76d62b8d1a67964ea3"
+      },
+      {
+        "path": "Assets/TutorialVideos/backdash-cancel-1.mp4",
+        "size": 880968,
+        "sha256": "2c8f73dcb7b2abf0d329317e446eeb9951495b80621ec0e76e997d58c59dc2a5"
+      },
+      {
+        "path": "Assets/TutorialVideos/backdash-cancel-2.mp4",
+        "size": 659362,
+        "sha256": "7bec0e5b31913b22af32b5265b709c715ff92552d97675a3dd5f8d90c10d7dd7"
+      },
+      {
+        "path": "Assets/TutorialVideos/backdash-cancel-3.mp4",
+        "size": 753736,
+        "sha256": "20a37ee88e8cde04fd9436469a9777b2f862cf971ffb6e015850b075f81134bb"
+      },
+      {
+        "path": "Assets/TutorialVideos/backdash-cancel-4.mp4",
+        "size": 882509,
+        "sha256": "49aced871affb7c892f92a2e48cbd726a8cb635062e228c72f42b441b681191a"
+      },
+      {
+        "path": "Assets/TutorialVideos/emote-bdc.mp4",
+        "size": 2107192,
+        "sha256": "064b86612ed4c844596f1d712d871cd784f0e924025a43775320722ca61aaf45"
+      },
+      {
+        "path": "Assets/TutorialVideos/fastgarou-1-3.mp4",
+        "size": 1670814,
+        "sha256": "951b9a3fcf75d0cd4bf5cc76fb71095efb860e92c67cde733741e43a0c9e4d34"
+      },
+      {
+        "path": "Assets/TutorialVideos/instant-twisted.mp4",
+        "size": 1226867,
+        "sha256": "f4fc5a2b26ec4d8af59796e908ffb932d28aaadfa8f69683dd8fcac8409d6eea"
+      },
+      {
+        "path": "Assets/TutorialVideos/kakyo-tech.mp4",
+        "size": 29250032,
+        "sha256": "e70de563fc715d3d33a53826b18b507eb65d5b08e8d58bec840d4dcbec4bec29"
+      },
+      {
+        "path": "Assets/TutorialVideos/kyoto.mp4",
+        "size": 2249405,
+        "sha256": "c565ab34d0cba9b6091dfc857ee277676b23e1ea6760b19ad6c44a0d732c6438"
+      },
+      {
+        "path": "Assets/TutorialVideos/left-instanttwi.mp4",
+        "size": 1226867,
+        "sha256": "f4fc5a2b26ec4d8af59796e908ffb932d28aaadfa8f69683dd8fcac8409d6eea"
+      },
+      {
+        "path": "Assets/TutorialVideos/lethal-dash.mp4",
+        "size": 942582,
+        "sha256": "ecce664735cd2b6f624a94b1d2c584c7d1adce2ad598ed220a516924044ca34d"
+      },
+      {
+        "path": "Assets/TutorialVideos/loop-dash.mp4",
+        "size": 848339,
+        "sha256": "9263132debd8f46f6a111f7dac98c0bd21b87a92e112d56d70aedd359b06b0ed"
+      },
+      {
+        "path": "Assets/TutorialVideos/no-shiftlock-void.mp4",
+        "size": 1801118,
+        "sha256": "2dd98735e52f5b09d9153725041e6b8be896a45eb1d06ec0a42dece4d1b2171a"
+      },
+      {
+        "path": "Assets/TutorialVideos/normal-supa.mp4",
+        "size": 1015618,
+        "sha256": "3f1f223a7ef51d79e2798dd730b3e3cd4c9807d4382ccd0f7f5267f1932a92b8"
+      },
+      {
+        "path": "Assets/TutorialVideos/normal-void.mp4",
+        "size": 1368892,
+        "sha256": "9f2822c3bb6007dfb366ca3c34bd8efddd9e3bd55e6640879593dad11ce547a9"
+      },
+      {
+        "path": "Assets/TutorialVideos/right-instanttwi.mp4",
+        "size": 1226867,
+        "sha256": "f4fc5a2b26ec4d8af59796e908ffb932d28aaadfa8f69683dd8fcac8409d6eea"
+      },
+      {
+        "path": "Assets/TutorialVideos/shove-m1-reset.mp4",
+        "size": 899117,
+        "sha256": "68e6df367b853a9673eb2308d0168c9719137838d336699daaa9535a298be527"
+      },
+      {
+        "path": "Assets/TutorialVideos/side-dash-cancel.mp4",
+        "size": 813909,
+        "sha256": "3cb7bd52e60903644a8752d3078f5c41a429dd5275b41adbd42f1b515faf68e2"
+      },
+      {
+        "path": "Assets/TutorialVideos/true-downslam.mp4",
+        "size": 911309,
+        "sha256": "77fffd4c5831fa1f47f2d7e744206c451cc5e10ba30150ec5e74486d162c1c43"
+      },
+      {
+        "path": "fima.integrity.json",
+        "size": 716,
+        "sha256": "fef21209119dd7728f3cbef5af67ba76e5dc6b8ecec26c5f31a7804e7eaf3dad"
+      },
+      {
+        "path": "FimaMacroStudio.exe",
+        "size": 82673875,
+        "sha256": "427c3b5859c862a482358fbc4533996322067156abe35c10d9f0e14987239302"
+      },
+      {
+        "path": "Microsoft.Web.WebView2.Core.xml",
+        "size": 630199,
+        "sha256": "c1591a6b6dc86ede8b348a2eab053b9744116ef59319218e251a0235187e7f00"
+      },
+      {
+        "path": "Microsoft.Web.WebView2.WinForms.xml",
+        "size": 41393,
+        "sha256": "4b40e49aec5dbda597224f997d57a16645ddc2eb00f31a6329204d1853a2245a"
+      },
+      {
+        "path": "Microsoft.Web.WebView2.Wpf.xml",
+        "size": 143909,
+        "sha256": "9755a7ad501b107e7a3905d1bdaf5e062be5b4f04390ec61429e38dc7686d7fb"
+      }
+    ]
+  }
+}

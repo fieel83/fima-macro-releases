@@ -2,12 +2,18 @@ name: FIMA Hub reviewed public release
 on:
   workflow_dispatch:
     inputs:
+      product:
+        description: Reviewed product scope
+        type: choice
+        options: [hub, macro-runtime]
+        default: hub
+        required: true
       target:
         description: Exact reviewed main commit SHA
         type: string
         required: true
       release_id:
-        description: Exact staged Hub draft release ID
+        description: Exact staged draft release ID
         type: string
         required: true
 permissions:
@@ -20,12 +26,18 @@ jobs:
   publish:
     if: github.ref == 'refs/heads/main' && github.actor_id == '215785493'
     runs-on: ubuntu-24.04
-    timeout-minutes: 10
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           persist-credentials: false
       - name: Verify exact signed candidate, native evidence and owner authority before publication
         env:
+          RELEASE_PRODUCT: ${{ inputs.product }}
           GH_TOKEN: ${{ github.token }}
-        run: node scripts/publish-hub.mjs
+        run: |
+          case "$RELEASE_PRODUCT" in
+            hub) node scripts/publish-hub.mjs ;;
+            macro-runtime) node scripts/publish-macro.mjs ;;
+            *) exit 1 ;;
+          esac
