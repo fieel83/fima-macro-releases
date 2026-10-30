@@ -5,7 +5,7 @@ on:
       product:
         description: Reviewed product scope
         type: choice
-        options: [hub, macro-runtime]
+        options: [hub, macro-runtime, unified]
         default: hub
         required: true
       target:
@@ -39,5 +39,6 @@ jobs:
           case "$RELEASE_PRODUCT" in
             hub) node scripts/publish-hub.mjs ;;
             macro-runtime) node scripts/publish-macro.mjs ;;
+            unified) node scripts/publish-unified.mjs ;;
             *) exit 1 ;;
           esac
