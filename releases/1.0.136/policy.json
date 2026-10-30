@@ -21,7 +21,8 @@
       "native": "Member-native-acceptance.json",
       "zip": "FIMA-Macro-Member-1.0.136.zip",
       "updatePolicy": "Member-stable-policy-envelope.json",
-      "approvedPolicySha256": "528e89ada38046cd93a0981ebaea114c714d748b7bdecf0d6a340bc3ca4e5c3b"
+      "approvedPolicySha256": "528e89ada38046cd93a0981ebaea114c714d748b7bdecf0d6a340bc3ca4e5c3b",
+      "packageIdentity": "b4742c71743f51d866a125764e2eb5daa6f72af845c7026a9b775e34e03de1a5"
     },
     {
       "label": "Owner",
@@ -33,7 +34,8 @@
       "native": "Owner-native-acceptance.json",
       "zip": "FIMA-Macro-Owner-1.0.136.zip",
       "updatePolicy": "Owner-stable-policy-envelope.json",
-      "approvedPolicySha256": "50edfa97b0d37c4ab7369c7e519b871616100872c01574075aa2ccf7fbdf2a70"
+      "approvedPolicySha256": "50edfa97b0d37c4ab7369c7e519b871616100872c01574075aa2ccf7fbdf2a70",
+      "packageIdentity": "73020d0e3a1ee4736bebf0a00ea66450496185ea0b4dab515c87561750b0db8b"
     }
   ],
   "assets": [

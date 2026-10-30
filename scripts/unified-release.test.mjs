@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {verifyUnifiedMetadata,verifyActualVersion} from './unified-release.mjs';
+import {verifyUnifiedMetadata,verifyActualVersion,verifyRuntimeReceipts} from './unified-release.mjs';
 const dir=new URL('../releases/1.0.136/',import.meta.url);
 const read=n=>JSON.parse(fs.readFileSync(new URL(n,dir)));
 const policy=read('policy.json'),hub=read('hub-release-signed.json');
@@ -23,4 +23,13 @@ test('unsigned variant version drift fails even when signed metadata is intact',
 });
 test('a missing pinned distribution ZIP fails',()=>{
  const p=structuredClone(policy);p.assets=p.assets.filter(a=>a.name!==p.variants[1].zip);assert.throws(()=>verifyUnifiedMetadata(p,hub,variants));
+});
+
+test('runtime-ready receipts bind both products to their exact signed package identities',()=>{
+ const receipts=policy.variants.map(v=>({metadata:{productId:v.productId,appVersion:policy.version,
+  executableSha256:v.executableSha256,packageIdentity:v.packageIdentity,clientReported:true}}));
+ verifyRuntimeReceipts(policy,receipts);
+ const forged=structuredClone(receipts);forged[0].metadata.packageIdentity='a'.repeat(64);
+ assert.throws(()=>verifyRuntimeReceipts(policy,forged));
+ assert.throws(()=>verifyRuntimeReceipts(policy,[receipts[0],receipts[0],receipts[1]]));
 });

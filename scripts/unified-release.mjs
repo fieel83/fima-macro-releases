@@ -48,3 +48,13 @@ export function verifyActualVersion(bytes,version) {
  for(const v of Object.values(versions))assert([version,version+'.0'].includes(v.split('+')[0]),'Actual executable version mismatch');
  return versions;
 }
+export function verifyRuntimeReceipts(policy, receipts) {
+ for(const v of policy.variants) {
+  const matches=receipts.filter(x=>x.metadata?.productId===v.productId);
+  assert.equal(matches.length,1,'Exactly one runtime-ready receipt per product is required');
+  const m=matches[0].metadata;
+  assert.equal(m.appVersion,policy.version);assert.equal(m.executableSha256,v.executableSha256);
+  assert.equal(m.clientReported,true);assert.match(v.packageIdentity,/^[a-f0-9]{64}$/);
+  assert.equal(m.packageIdentity,v.packageIdentity,'Runtime package identity must match the signed Hub contract');
+ }
+}

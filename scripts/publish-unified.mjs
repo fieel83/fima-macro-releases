@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import {createPublicKey,verify} from 'node:crypto';
 import assert from 'node:assert/strict';
-import {sha,verifyUnifiedMetadata,verifyActualVersion} from './unified-release.mjs';
+import {sha,verifyUnifiedMetadata,verifyActualVersion,verifyRuntimeReceipts} from './unified-release.mjs';
 const directory='releases/1.0.136/';
 const read=name=>JSON.parse(fs.readFileSync(directory+name));
 const policy=read('policy.json');
@@ -27,7 +27,7 @@ for(const v of policy.variants) {
 }
 const readyBytes=fs.readFileSync(directory+policy.runtimeReady),readyAsset=policy.assets.find(a=>a.name===policy.runtimeReady);assert(readyAsset);assert.equal(sha(readyBytes),readyAsset.sha256);assert.equal(readyBytes.length,readyAsset.size);
 const ready=JSON.parse(readyBytes).receipts;
-for(const v of policy.variants){const r=ready.find(x=>x.metadata.productId===v.productId);assert(r);assert.equal(r.metadata.appVersion,policy.version);assert.equal(r.metadata.executableSha256,v.executableSha256);assert.equal(r.metadata.clientReported,true);assert.match(r.metadata.packageIdentity,/^[a-f0-9]{64}$/);}
+verifyRuntimeReceipts(policy,ready);
 const health=await(await fetch('https://api.fimamacro.com/health',{signal:AbortSignal.timeout(30000)})).json();assert.equal(health.ok,true);assert.equal(health.commit,policy.backendSha);
 if(process.argv.includes('--verify-local')){console.log('PASS all local and production runtime gates');process.exit(0);}
 assert.equal(process.env.GITHUB_ACTIONS,'true');
