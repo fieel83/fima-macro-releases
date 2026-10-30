@@ -503,9 +503,34 @@
       "name": "file-158933c42224fca46ed8a7b56aee69b81b26c317382efb52d12381d2ed7f9051",
       "sha256": "158933c42224fca46ed8a7b56aee69b81b26c317382efb52d12381d2ed7f9051",
       "size": 82679815
+    },
+    {
+      "name": "Member-stable-policy-envelope.json",
+      "sha256": "432b5dcaac5866828329b09169106a72c9de8254df696b25a27d7e86e19a5efc",
+      "size": 9465
+    },
+    {
+      "name": "Owner-stable-policy-envelope.json",
+      "sha256": "0da8789b5c7309ff15b149839dd3718b4108208f72ad023b84cd231c43d8365c",
+      "size": 9473
+    },
+    {
+      "name": "Member-native-acceptance.json",
+      "sha256": "38c1e9ffa6eab6ae038eafb3ff160cc73c637827460c65fc77733f292ebba116",
+      "size": 819
+    },
+    {
+      "name": "Owner-native-acceptance.json",
+      "sha256": "bfbdfb377cbf349b55612e83961a55db52057134cb3dd527b0b9a7d06634f920",
+      "size": 824
+    },
+    {
+      "name": "runtime-ready-receipts.json",
+      "sha256": "989d764ca57450e5c41babddb183ab1ba9c7e9ed5ab158f0feac45aabc3464b8",
+      "size": 1011
     }
   ],
-  "backendSha": "b4fe6f36f50df35a870b78698cab651f1ce67be3",
+  "backendSha": "33849b85ac10b06564934b03eeb5ecc73074cf40",
   "runtimeReady": "runtime-ready-receipts.json",
   "nsisWaiver": {
     "version": "1.0.136",
