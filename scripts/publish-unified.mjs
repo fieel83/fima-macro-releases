@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import {createPublicKey,verify} from 'node:crypto';
 import assert from 'node:assert/strict';
 import {sha,verifyUnifiedMetadata,verifyActualVersion,verifyRuntimeReceipts} from './unified-release.mjs';
+async function main() {
 const directory='releases/1.0.136/';
 const read=name=>JSON.parse(fs.readFileSync(directory+name));
 const policy=read('policy.json');
@@ -12,7 +13,7 @@ for(const name of [policy.manifest,...policy.variants.map(v=>v.envelope)]) {
 }
 assert.equal(policy.nsisWaiver.version,'1.0.136');assert.equal(policy.version,policy.nsisWaiver.version);
 assert.equal(policy.nsisWaiver.installerSha256,policy.installer.sha256);
-if(process.argv.includes('--verify-metadata')){console.log('PASS unified signed metadata; native/runtime and RSA policy gates still required');process.exit(0);}
+if(process.argv.includes('--verify-metadata')){console.log('PASS unified signed metadata; native/runtime and RSA policy gates still required');return;}
 const publicXml="<RSAKeyValue><Modulus>2OYlvluknnl2tefzkwCdPwlS3eCfQvRI7APs6fchs15x3wxX87mwF9ghp6vv6bSRSn2ZvNHsDoFDzYFtibAQxkyFO0Rk5ayQ9LDIeadu1xWDDxiB5cds0rkPk/SxY5ecFhvKsFpM2jVG+uT/48K9j3PdTkdDeR/GD3lTmLDQg+6UbRcLbvOsedvslEa484Ub36owcZ+Y4rai1jkGW8oF22NkiyPy7CfAnzxFVD/l5FU8ENfpl85cuiD9xi13e3LTB6f48gjTtmQPLjk94FkvxAaVLDqQq3ASVstxDCOaGLUpGuxjsSaoLJC/Df88tanmVv/wK9KgBxRrKOdq3qwQiT581U5RMCE8HBYv9TCjm192LjEFCKqKvCSkdbUxVvdACK+c5LAzuV3hg2nObv7FSaBeHXm2VCVmJTaylcnUAA20dtHwxsV3uK5CWIMehuUIrfDpJmLaVcvULz0d0S28PYn+9Mrp/ioXs3hxWL5Ei2xZbGs7uwz2T3tAZTiAHyn9</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>";
 const field=name=>Buffer.from(publicXml.match(new RegExp('<'+name+'>([^<]+)</'+name+'>'))[1],'base64').toString('base64url');
 const policyKey=createPublicKey({key:{kty:'RSA',n:field('Modulus'),e:field('Exponent')},format:'jwk'});
@@ -29,7 +30,7 @@ const readyBytes=fs.readFileSync(directory+policy.runtimeReady),readyAsset=polic
 const ready=JSON.parse(readyBytes).receipts;
 verifyRuntimeReceipts(policy,ready);
 const health=await(await fetch('https://api.fimamacro.com/health',{signal:AbortSignal.timeout(30000)})).json();assert.equal(health.ok,true);assert.equal(health.commit,policy.backendSha);
-if(process.argv.includes('--verify-local')){console.log('PASS all local and production runtime gates');process.exit(0);}
+if(process.argv.includes('--verify-local')){console.log('PASS all local and production runtime gates');return;}
 assert.equal(process.env.GITHUB_ACTIONS,'true');
 assert.equal(process.env.GITHUB_REPOSITORY,'fieel83/fima-macro-releases');
 assert.equal(process.env.GITHUB_EVENT_NAME,'workflow_dispatch');
@@ -80,3 +81,6 @@ assert.deepEqual(current.assets.map(a=>[a.id,a.digest,a.size,a.updated_at]),rele
 const published=await api('/releases/'+release.id,'PATCH',{draft:false,make_latest:'true'});
 assert.equal(published.draft,false); assert.equal(published.tag_name,policy.tag);
 console.log(JSON.stringify({product:policy.product,version:policy.version,releaseUrl:published.html_url,packages:policy.variants.map(v=>policy.assets.find(a=>a.name===v.zip)),run:run.html_url,scope:policy.acceptanceScope}));
+
+}
+await main();

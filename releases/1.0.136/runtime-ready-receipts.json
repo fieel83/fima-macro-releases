@@ -1,0 +1,28 @@
+{
+  "at": "2026-10-30T21:14:18.079Z",
+  "source": "production Render Postgres, server-enforced READ ONLY transaction; admin containment unchanged",
+  "receipts": [
+    {
+      "action": "runtime_client_ready",
+      "createdAt": "2026-10-30T21:07:46.802Z",
+      "metadata": {
+        "productId": "fima-macro",
+        "appVersion": "1.0.136",
+        "clientReported": true,
+        "packageIdentity": "b4742c71743f51d866a125764e2eb5daa6f72af845c7026a9b775e34e03de1a5",
+        "executableSha256": "f46d159dd2665f05e33ecb3926b5a4afe56bc1e7e839a4fb4d51094623ad5887"
+      }
+    },
+    {
+      "action": "runtime_client_ready",
+      "createdAt": "2026-10-30T21:08:19.398Z",
+      "metadata": {
+        "productId": "fima-macro-owner",
+        "appVersion": "1.0.136",
+        "clientReported": true,
+        "packageIdentity": "73020d0e3a1ee4736bebf0a00ea66450496185ea0b4dab515c87561750b0db8b",
+        "executableSha256": "158933c42224fca46ed8a7b56aee69b81b26c317382efb52d12381d2ed7f9051"
+      }
+    }
+  ]
+}
