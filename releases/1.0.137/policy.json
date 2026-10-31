@@ -1,0 +1,542 @@
+{
+  "format": "fima-unified-release-v1",
+  "product": "FIMA Hub + Macro Member + Macro Owner",
+  "version": "1.0.137",
+  "tag": "v1.0.137",
+  "ownerId": 215785493,
+  "installer": {
+    "name": "FIMA-1.0.137-x64.exe",
+    "sha256": "488ca5442f498637f1c3cee96d11c952e11294e1f9071f964c2406e5d7913bce",
+    "size": 107332081
+  },
+  "manifest": "hub-release-signed.json",
+  "variants": [
+    {
+      "label": "Member",
+      "version": "1.0.137",
+      "productId": "fima-macro",
+      "channel": "candidate",
+      "executableSha256": "e347e8e464573c0c51b8f74cfd2978c009a4a6b413094e495757f6eb38799325",
+      "envelope": "Member-catalog-update-envelope.json",
+      "native": "Member-native-acceptance.json",
+      "zip": "FIMA-Macro-Member-1.0.137.zip",
+      "updatePolicy": "Member-stable-policy-envelope.json",
+      "approvedPolicySha256": "90eca4791cfe04c84df84d6bc12bcac670827b0d1308af86654485d07118e2c6",
+      "packageIdentity": "b4742c71743f51d866a125764e2eb5daa6f72af845c7026a9b775e34e03de1a5"
+    },
+    {
+      "label": "Owner",
+      "version": "1.0.137",
+      "productId": "fima-macro-owner",
+      "channel": "owner-candidate",
+      "executableSha256": "01c1857a46f58cfaab32e51a0c427b16c70a18a597ce7bea33d48ec1cbfe7e65",
+      "envelope": "Owner-catalog-update-envelope.json",
+      "native": "Owner-native-acceptance.json",
+      "zip": "FIMA-Macro-Owner-1.0.137.zip",
+      "updatePolicy": "Owner-stable-policy-envelope.json",
+      "approvedPolicySha256": "b4d35d49f46eca945e8445d032a8715cec1ad5fbe214cea532b4c0a6f8e0f21d",
+      "packageIdentity": "73020d0e3a1ee4736bebf0a00ea66450496185ea0b4dab515c87561750b0db8b"
+    }
+  ],
+  "assets": [
+    {
+      "name": "hub-release-signed.json",
+      "sha256": "bde6d1233aff5f6dcfe3150442347dc32daf5d560b2273a52cfacc82486b7356",
+      "size": 417
+    },
+    {
+      "name": "FIMA-1.0.137-x64.exe",
+      "sha256": "488ca5442f498637f1c3cee96d11c952e11294e1f9071f964c2406e5d7913bce",
+      "size": 107332081
+    },
+    {
+      "name": "Member-catalog-update-envelope.json",
+      "sha256": "4577ebb7338de8cd506cd4dd9139c5e614419155b9a6579667580b9293af9e80",
+      "size": 16447
+    },
+    {
+      "name": "FIMA-Macro-Member-1.0.137.zip",
+      "sha256": "6e0772996c0ac5fcec58edce3271cd9b869f29f087639639d663feb81e034c6c",
+      "size": 154803830
+    },
+    {
+      "name": "file-dcd73a5cb2832e958df9f54ffc16c8599119990cf69a7683a1cc7b7942b5dc54",
+      "sha256": "dcd73a5cb2832e958df9f54ffc16c8599119990cf69a7683a1cc7b7942b5dc54",
+      "size": 47217
+    },
+    {
+      "name": "file-88089f54175f2a07bcef27cb28b9225171a74dfbc35d303a611c0759781bdcd7",
+      "sha256": "88089f54175f2a07bcef27cb28b9225171a74dfbc35d303a611c0759781bdcd7",
+      "size": 137819
+    },
+    {
+      "name": "file-838f0ce307da3a363c394b74fdf76e58869dd0ba00cd933a367f70d147d2c5fe",
+      "sha256": "838f0ce307da3a363c394b74fdf76e58869dd0ba00cd933a367f70d147d2c5fe",
+      "size": 1697948
+    },
+    {
+      "name": "file-d6ba30c1dd4fa4f504831982611b8a96d74fd716c766ba7fe46d973f6e643d07",
+      "sha256": "d6ba30c1dd4fa4f504831982611b8a96d74fd716c766ba7fe46d973f6e643d07",
+      "size": 1360905
+    },
+    {
+      "name": "file-9315ae83a0d8065b60c24ec9d83799106e4274b1828431f64fa0cc0eea5dc926",
+      "sha256": "9315ae83a0d8065b60c24ec9d83799106e4274b1828431f64fa0cc0eea5dc926",
+      "size": 12103
+    },
+    {
+      "name": "file-b5d86b05843247b7dc3d6aa52401bed1bd79321b0c6bf83e7ccf80ed0702a37d",
+      "sha256": "b5d86b05843247b7dc3d6aa52401bed1bd79321b0c6bf83e7ccf80ed0702a37d",
+      "size": 2159671
+    },
+    {
+      "name": "file-e09f57074314c5b7acb4cedec6d722ecdf20533737c59b93b050ae98209e8710",
+      "sha256": "e09f57074314c5b7acb4cedec6d722ecdf20533737c59b93b050ae98209e8710",
+      "size": 10719
+    },
+    {
+      "name": "file-abf7cdb1550980afdcd98581acc7c60e9cb6b23d442f5dc97febdefd18e485f5",
+      "sha256": "abf7cdb1550980afdcd98581acc7c60e9cb6b23d442f5dc97febdefd18e485f5",
+      "size": 45572
+    },
+    {
+      "name": "file-424a03286933c3a81f7408e0e2b9e1d3aa7cfb10312bfeac08ce97e068519b3a",
+      "sha256": "424a03286933c3a81f7408e0e2b9e1d3aa7cfb10312bfeac08ce97e068519b3a",
+      "size": 84004
+    },
+    {
+      "name": "file-7394a7524cade9f546ab48defc437b3bd5dd5c200e0d3681fd5bb7a849994227",
+      "sha256": "7394a7524cade9f546ab48defc437b3bd5dd5c200e0d3681fd5bb7a849994227",
+      "size": 20216
+    },
+    {
+      "name": "file-7fc60e9d515c6d82bf1f5b68850856594808fa0d7aed2e30ca8b25a53b54bd52",
+      "sha256": "7fc60e9d515c6d82bf1f5b68850856594808fa0d7aed2e30ca8b25a53b54bd52",
+      "size": 27432
+    },
+    {
+      "name": "file-4d7ab140b0510b38e8714c5f64ce0f6bea7aa1ef5346e9565de20901eac40247",
+      "sha256": "4d7ab140b0510b38e8714c5f64ce0f6bea7aa1ef5346e9565de20901eac40247",
+      "size": 68388
+    },
+    {
+      "name": "file-3f2eba09922b0603a697fda7d7122c636c7186f0ac4d1e81455dc12c4c35d0d5",
+      "sha256": "3f2eba09922b0603a697fda7d7122c636c7186f0ac4d1e81455dc12c4c35d0d5",
+      "size": 21700
+    },
+    {
+      "name": "file-de77a61b842958dc4efbefccb5532824f2d5efd738ff5fecc0d5d6eb6528896b",
+      "sha256": "de77a61b842958dc4efbefccb5532824f2d5efd738ff5fecc0d5d6eb6528896b",
+      "size": 34568
+    },
+    {
+      "name": "file-ce5ccd8aec62ee33966e16903bc745b5ec8db5f9d33a019911556e84f7a04293",
+      "sha256": "ce5ccd8aec62ee33966e16903bc745b5ec8db5f9d33a019911556e84f7a04293",
+      "size": 93340
+    },
+    {
+      "name": "file-55cfffcd686e002407f4731b5630b62477b376955d41c66ac2c088106e478f39",
+      "sha256": "55cfffcd686e002407f4731b5630b62477b376955d41c66ac2c088106e478f39",
+      "size": 72932
+    },
+    {
+      "name": "file-795350fac9df1b8f665a82ed23e82c3f6bf592ef32d25a924986bf3172738f91",
+      "sha256": "795350fac9df1b8f665a82ed23e82c3f6bf592ef32d25a924986bf3172738f91",
+      "size": 50244
+    },
+    {
+      "name": "file-321e8265234f6a885d93a2d20dcc3d2b1bac8252f351bbf8732f697fe9978e94",
+      "sha256": "321e8265234f6a885d93a2d20dcc3d2b1bac8252f351bbf8732f697fe9978e94",
+      "size": 57996
+    },
+    {
+      "name": "file-ff26650adcaebb6f34844543634da83415c65f4a45bbaffdfcbded75ccd46fff",
+      "sha256": "ff26650adcaebb6f34844543634da83415c65f4a45bbaffdfcbded75ccd46fff",
+      "size": 27808
+    },
+    {
+      "name": "file-bab500e3b486cd92d798fd625a9f6478660941c2373fb1e722c7f5a169fa30ef",
+      "sha256": "bab500e3b486cd92d798fd625a9f6478660941c2373fb1e722c7f5a169fa30ef",
+      "size": 51348
+    },
+    {
+      "name": "file-47447ef9dd51e6c8c65a04317b2a56356eaec3a6711c895dd8849a718d6ef288",
+      "sha256": "47447ef9dd51e6c8c65a04317b2a56356eaec3a6711c895dd8849a718d6ef288",
+      "size": 39776
+    },
+    {
+      "name": "file-6e9eef4f6def32280211c41fad0e09eda950937e3b0dfe813911e9927752742a",
+      "sha256": "6e9eef4f6def32280211c41fad0e09eda950937e3b0dfe813911e9927752742a",
+      "size": 16312
+    },
+    {
+      "name": "file-264ef25ad0dc0e2b42232357445f4370ab0e0eee4cf6152e1d6e51e6d703ddde",
+      "sha256": "264ef25ad0dc0e2b42232357445f4370ab0e0eee4cf6152e1d6e51e6d703ddde",
+      "size": 194776
+    },
+    {
+      "name": "file-5751022bdfe00903cf6ec5d4a8d23920952ecc213169bbaf19f28d8dedc54339",
+      "sha256": "5751022bdfe00903cf6ec5d4a8d23920952ecc213169bbaf19f28d8dedc54339",
+      "size": 15448
+    },
+    {
+      "name": "file-fc5bdca791a5e53b7a2604fe4321d230b1ae7d8271755508d78b264292f7e49d",
+      "sha256": "fc5bdca791a5e53b7a2604fe4321d230b1ae7d8271755508d78b264292f7e49d",
+      "size": 11928
+    },
+    {
+      "name": "file-a976656471201f9068fb52f83051467e4acd4eb2ef53c3cbb801d5b74bfd12ff",
+      "sha256": "a976656471201f9068fb52f83051467e4acd4eb2ef53c3cbb801d5b74bfd12ff",
+      "size": 29152
+    },
+    {
+      "name": "file-931753ae15634435996c54bab5ffb503a57d4437045b89e7d2d8bd0d886f1fa4",
+      "sha256": "931753ae15634435996c54bab5ffb503a57d4437045b89e7d2d8bd0d886f1fa4",
+      "size": 44292
+    },
+    {
+      "name": "file-dd29c485ced2367408637575d83187de14531df71547540c52d620f6f375825f",
+      "sha256": "dd29c485ced2367408637575d83187de14531df71547540c52d620f6f375825f",
+      "size": 1886656
+    },
+    {
+      "name": "file-72479885fa9c0e7f645c7403368113bd13fdd30e0c5c7e9e606a7fa7aad10735",
+      "sha256": "72479885fa9c0e7f645c7403368113bd13fdd30e0c5c7e9e606a7fa7aad10735",
+      "size": 1882188
+    },
+    {
+      "name": "file-8578bbdb2839f57b6918f1f65ef63109fbbfc44d1ad1c110f66f675ee318c062",
+      "sha256": "8578bbdb2839f57b6918f1f65ef63109fbbfc44d1ad1c110f66f675ee318c062",
+      "size": 1666432
+    },
+    {
+      "name": "file-94c7c8c461dd1a0afd6cb6ee5b78c9404eede65a641808791a520846de25b1bf",
+      "sha256": "94c7c8c461dd1a0afd6cb6ee5b78c9404eede65a641808791a520846de25b1bf",
+      "size": 2105780
+    },
+    {
+      "name": "file-ea1f1523b26e639952ba79ada2537575a4d883683016b82fbb39ff15a082dcdc",
+      "sha256": "ea1f1523b26e639952ba79ada2537575a4d883683016b82fbb39ff15a082dcdc",
+      "size": 2118978
+    },
+    {
+      "name": "file-c538b4c9dce2b64b0fdb68f38529472ca1d1bee7e1257c854432fabdd67df8bc",
+      "sha256": "c538b4c9dce2b64b0fdb68f38529472ca1d1bee7e1257c854432fabdd67df8bc",
+      "size": 2108490
+    },
+    {
+      "name": "file-f97f1befaed2590c06a657e651d9eff105a9a09357222b85f310728fea43dd16",
+      "sha256": "f97f1befaed2590c06a657e651d9eff105a9a09357222b85f310728fea43dd16",
+      "size": 1965529
+    },
+    {
+      "name": "file-e3d207fede7e3c4851931cd8587cb7eebf8ead805a0950ad0ca063ca1841c280",
+      "sha256": "e3d207fede7e3c4851931cd8587cb7eebf8ead805a0950ad0ca063ca1841c280",
+      "size": 2029132
+    },
+    {
+      "name": "file-f4ce6fba0b440bb3199bf72d06f8bd48de91376199dd884d0a9e9234b25ed90e",
+      "sha256": "f4ce6fba0b440bb3199bf72d06f8bd48de91376199dd884d0a9e9234b25ed90e",
+      "size": 2206757
+    },
+    {
+      "name": "file-37ac044482262671fd5f0d168ec7c23b172979f82ed707f69ab1a3b694da32ff",
+      "sha256": "37ac044482262671fd5f0d168ec7c23b172979f82ed707f69ab1a3b694da32ff",
+      "size": 22471
+    },
+    {
+      "name": "file-31ba4ff796b01d0d4098978a4f33047b764641645acfefde319ef0d30c60a669",
+      "sha256": "31ba4ff796b01d0d4098978a4f33047b764641645acfefde319ef0d30c60a669",
+      "size": 315897
+    },
+    {
+      "name": "file-e5b0ecde4b5f3ee7f6ade4110ff35c33c6ecefeda31d74b105c0c526005c306b",
+      "sha256": "e5b0ecde4b5f3ee7f6ade4110ff35c33c6ecefeda31d74b105c0c526005c306b",
+      "size": 1280738
+    },
+    {
+      "name": "file-d0d6473f9106bc028fb0503646a46be5d44382ace506c3339026106e854099e5",
+      "sha256": "d0d6473f9106bc028fb0503646a46be5d44382ace506c3339026106e854099e5",
+      "size": 35108
+    },
+    {
+      "name": "file-fb4419c2fd3ff1965da50e828a9077f5d52fc8ac2336ac7564a57f68f8455332",
+      "sha256": "fb4419c2fd3ff1965da50e828a9077f5d52fc8ac2336ac7564a57f68f8455332",
+      "size": 26400
+    },
+    {
+      "name": "file-6cd9daa84f9363566a821030df3448faa0c83ca1834fe9b6b77a73383afe3f6e",
+      "sha256": "6cd9daa84f9363566a821030df3448faa0c83ca1834fe9b6b77a73383afe3f6e",
+      "size": 10710
+    },
+    {
+      "name": "file-0c942629872b499db4a66ebde8d34f74899762a39cda4f3212419d6806ffbb7d",
+      "sha256": "0c942629872b499db4a66ebde8d34f74899762a39cda4f3212419d6806ffbb7d",
+      "size": 12056
+    },
+    {
+      "name": "file-721f261cce78fbb2dfcac31ed1858bf9c20bbb733b75a478cf8aadd9dca6fd6a",
+      "sha256": "721f261cce78fbb2dfcac31ed1858bf9c20bbb733b75a478cf8aadd9dca6fd6a",
+      "size": 11843
+    },
+    {
+      "name": "file-774ded6c8e6490fb95bc6d513b306b2396c2b6ae4574cef6aadd8ffc5de192a5",
+      "sha256": "774ded6c8e6490fb95bc6d513b306b2396c2b6ae4574cef6aadd8ffc5de192a5",
+      "size": 11073
+    },
+    {
+      "name": "file-80e90e248c011480a0ef7f17c95d61283e13956fe6b9aabb2756567301b58c4e",
+      "sha256": "80e90e248c011480a0ef7f17c95d61283e13956fe6b9aabb2756567301b58c4e",
+      "size": 4784
+    },
+    {
+      "name": "file-3f43a2c2a641671200486f12a76ac106b62876182eabfe8677ca0658c4836f3c",
+      "sha256": "3f43a2c2a641671200486f12a76ac106b62876182eabfe8677ca0658c4836f3c",
+      "size": 11600
+    },
+    {
+      "name": "file-e36eae62510d1f18ea8d968241aaa1af4b17bfa06c4c247c7c3df0903091ace8",
+      "sha256": "e36eae62510d1f18ea8d968241aaa1af4b17bfa06c4c247c7c3df0903091ace8",
+      "size": 650
+    },
+    {
+      "name": "file-9a3a39551d36255724295fa53316260a16d56ce4bc82b2f20ce2f1aac053837b",
+      "sha256": "9a3a39551d36255724295fa53316260a16d56ce4bc82b2f20ce2f1aac053837b",
+      "size": 10611
+    },
+    {
+      "name": "file-5153a3f8f4578a447f9ad5aeda344f7e04ec32b46a7a2864952d85a520e8fe18",
+      "sha256": "5153a3f8f4578a447f9ad5aeda344f7e04ec32b46a7a2864952d85a520e8fe18",
+      "size": 10651
+    },
+    {
+      "name": "file-2acc143f9c1cbecfae0a114da0900fcfa46538fb9208107fb61405fe02bb28ff",
+      "sha256": "2acc143f9c1cbecfae0a114da0900fcfa46538fb9208107fb61405fe02bb28ff",
+      "size": 12941
+    },
+    {
+      "name": "file-3c181bb7aa9de71670c0354fa153592cb93cefe391d428f57862d36975b47420",
+      "sha256": "3c181bb7aa9de71670c0354fa153592cb93cefe391d428f57862d36975b47420",
+      "size": 10637
+    },
+    {
+      "name": "file-9d15f665cea9fdcee9c227e2189c268c8b495fefbbca2b00c19fdd2ae3fed2fb",
+      "sha256": "9d15f665cea9fdcee9c227e2189c268c8b495fefbbca2b00c19fdd2ae3fed2fb",
+      "size": 12172
+    },
+    {
+      "name": "file-febbc688b9e3127dd2e7758ab1cd583671d2521240d173168d9dc869731b55fd",
+      "sha256": "febbc688b9e3127dd2e7758ab1cd583671d2521240d173168d9dc869731b55fd",
+      "size": 11862
+    },
+    {
+      "name": "file-afaaf3b2af6deb433e712cface2c21355827de2d8c3f4d41410eb3bc3b83d9ff",
+      "sha256": "afaaf3b2af6deb433e712cface2c21355827de2d8c3f4d41410eb3bc3b83d9ff",
+      "size": 11309
+    },
+    {
+      "name": "file-eec77724d6ad3ff9c2300ac91aba98f4b238898b78ccb33bfc604115f0722b87",
+      "sha256": "eec77724d6ad3ff9c2300ac91aba98f4b238898b78ccb33bfc604115f0722b87",
+      "size": 11518
+    },
+    {
+      "name": "file-0634ec06df65a05c61393aac5785db5b5c106469edbc70b174cef8f9aa8122c7",
+      "sha256": "0634ec06df65a05c61393aac5785db5b5c106469edbc70b174cef8f9aa8122c7",
+      "size": 14852
+    },
+    {
+      "name": "file-71da4f44c509e6d542d62e82012eb150cf6904b3f7cf36ca56bb428c2dbe947f",
+      "sha256": "71da4f44c509e6d542d62e82012eb150cf6904b3f7cf36ca56bb428c2dbe947f",
+      "size": 12546
+    },
+    {
+      "name": "file-6db72ce4b7ad53b2408dd59471e70b1633887aa8332a80be53e08e7e2c05ebc3",
+      "sha256": "6db72ce4b7ad53b2408dd59471e70b1633887aa8332a80be53e08e7e2c05ebc3",
+      "size": 8038
+    },
+    {
+      "name": "file-629f9323419f36a5f8ca991c6bf6bcec34e47da644ad4e0f855a0e254364a52d",
+      "sha256": "629f9323419f36a5f8ca991c6bf6bcec34e47da644ad4e0f855a0e254364a52d",
+      "size": 14710
+    },
+    {
+      "name": "file-aa8447935d208648664143c32c133e37e22622db8b05f6fff5c59ca8f10abf69",
+      "sha256": "aa8447935d208648664143c32c133e37e22622db8b05f6fff5c59ca8f10abf69",
+      "size": 14500
+    },
+    {
+      "name": "file-c91e201e4fde0023e0363e5e32af2984d264b47c780450dc7e5053c3d540322b",
+      "sha256": "c91e201e4fde0023e0363e5e32af2984d264b47c780450dc7e5053c3d540322b",
+      "size": 2282679
+    },
+    {
+      "name": "file-d38293c5bdf12d8cc16532c5a3dac8d3043ed4215b730a76d62b8d1a67964ea3",
+      "sha256": "d38293c5bdf12d8cc16532c5a3dac8d3043ed4215b730a76d62b8d1a67964ea3",
+      "size": 742433
+    },
+    {
+      "name": "file-2c8f73dcb7b2abf0d329317e446eeb9951495b80621ec0e76e997d58c59dc2a5",
+      "sha256": "2c8f73dcb7b2abf0d329317e446eeb9951495b80621ec0e76e997d58c59dc2a5",
+      "size": 880968
+    },
+    {
+      "name": "file-7bec0e5b31913b22af32b5265b709c715ff92552d97675a3dd5f8d90c10d7dd7",
+      "sha256": "7bec0e5b31913b22af32b5265b709c715ff92552d97675a3dd5f8d90c10d7dd7",
+      "size": 659362
+    },
+    {
+      "name": "file-20a37ee88e8cde04fd9436469a9777b2f862cf971ffb6e015850b075f81134bb",
+      "sha256": "20a37ee88e8cde04fd9436469a9777b2f862cf971ffb6e015850b075f81134bb",
+      "size": 753736
+    },
+    {
+      "name": "file-49aced871affb7c892f92a2e48cbd726a8cb635062e228c72f42b441b681191a",
+      "sha256": "49aced871affb7c892f92a2e48cbd726a8cb635062e228c72f42b441b681191a",
+      "size": 882509
+    },
+    {
+      "name": "file-064b86612ed4c844596f1d712d871cd784f0e924025a43775320722ca61aaf45",
+      "sha256": "064b86612ed4c844596f1d712d871cd784f0e924025a43775320722ca61aaf45",
+      "size": 2107192
+    },
+    {
+      "name": "file-951b9a3fcf75d0cd4bf5cc76fb71095efb860e92c67cde733741e43a0c9e4d34",
+      "sha256": "951b9a3fcf75d0cd4bf5cc76fb71095efb860e92c67cde733741e43a0c9e4d34",
+      "size": 1670814
+    },
+    {
+      "name": "file-f4fc5a2b26ec4d8af59796e908ffb932d28aaadfa8f69683dd8fcac8409d6eea",
+      "sha256": "f4fc5a2b26ec4d8af59796e908ffb932d28aaadfa8f69683dd8fcac8409d6eea",
+      "size": 1226867
+    },
+    {
+      "name": "file-e70de563fc715d3d33a53826b18b507eb65d5b08e8d58bec840d4dcbec4bec29",
+      "sha256": "e70de563fc715d3d33a53826b18b507eb65d5b08e8d58bec840d4dcbec4bec29",
+      "size": 29250032
+    },
+    {
+      "name": "file-c565ab34d0cba9b6091dfc857ee277676b23e1ea6760b19ad6c44a0d732c6438",
+      "sha256": "c565ab34d0cba9b6091dfc857ee277676b23e1ea6760b19ad6c44a0d732c6438",
+      "size": 2249405
+    },
+    {
+      "name": "file-ecce664735cd2b6f624a94b1d2c584c7d1adce2ad598ed220a516924044ca34d",
+      "sha256": "ecce664735cd2b6f624a94b1d2c584c7d1adce2ad598ed220a516924044ca34d",
+      "size": 942582
+    },
+    {
+      "name": "file-9263132debd8f46f6a111f7dac98c0bd21b87a92e112d56d70aedd359b06b0ed",
+      "sha256": "9263132debd8f46f6a111f7dac98c0bd21b87a92e112d56d70aedd359b06b0ed",
+      "size": 848339
+    },
+    {
+      "name": "file-2dd98735e52f5b09d9153725041e6b8be896a45eb1d06ec0a42dece4d1b2171a",
+      "sha256": "2dd98735e52f5b09d9153725041e6b8be896a45eb1d06ec0a42dece4d1b2171a",
+      "size": 1801118
+    },
+    {
+      "name": "file-3f1f223a7ef51d79e2798dd730b3e3cd4c9807d4382ccd0f7f5267f1932a92b8",
+      "sha256": "3f1f223a7ef51d79e2798dd730b3e3cd4c9807d4382ccd0f7f5267f1932a92b8",
+      "size": 1015618
+    },
+    {
+      "name": "file-9f2822c3bb6007dfb366ca3c34bd8efddd9e3bd55e6640879593dad11ce547a9",
+      "sha256": "9f2822c3bb6007dfb366ca3c34bd8efddd9e3bd55e6640879593dad11ce547a9",
+      "size": 1368892
+    },
+    {
+      "name": "file-68e6df367b853a9673eb2308d0168c9719137838d336699daaa9535a298be527",
+      "sha256": "68e6df367b853a9673eb2308d0168c9719137838d336699daaa9535a298be527",
+      "size": 899117
+    },
+    {
+      "name": "file-3cb7bd52e60903644a8752d3078f5c41a429dd5275b41adbd42f1b515faf68e2",
+      "sha256": "3cb7bd52e60903644a8752d3078f5c41a429dd5275b41adbd42f1b515faf68e2",
+      "size": 813909
+    },
+    {
+      "name": "file-77fffd4c5831fa1f47f2d7e744206c451cc5e10ba30150ec5e74486d162c1c43",
+      "sha256": "77fffd4c5831fa1f47f2d7e744206c451cc5e10ba30150ec5e74486d162c1c43",
+      "size": 911309
+    },
+    {
+      "name": "file-04ce39b9252da852d5e148165675bb32560a51fe21228eecedcd05c5e4d0ce07",
+      "sha256": "04ce39b9252da852d5e148165675bb32560a51fe21228eecedcd05c5e4d0ce07",
+      "size": 716
+    },
+    {
+      "name": "file-e347e8e464573c0c51b8f74cfd2978c009a4a6b413094e495757f6eb38799325",
+      "sha256": "e347e8e464573c0c51b8f74cfd2978c009a4a6b413094e495757f6eb38799325",
+      "size": 82679638
+    },
+    {
+      "name": "file-c1591a6b6dc86ede8b348a2eab053b9744116ef59319218e251a0235187e7f00",
+      "sha256": "c1591a6b6dc86ede8b348a2eab053b9744116ef59319218e251a0235187e7f00",
+      "size": 630199
+    },
+    {
+      "name": "file-4b40e49aec5dbda597224f997d57a16645ddc2eb00f31a6329204d1853a2245a",
+      "sha256": "4b40e49aec5dbda597224f997d57a16645ddc2eb00f31a6329204d1853a2245a",
+      "size": 41393
+    },
+    {
+      "name": "file-9755a7ad501b107e7a3905d1bdaf5e062be5b4f04390ec61429e38dc7686d7fb",
+      "sha256": "9755a7ad501b107e7a3905d1bdaf5e062be5b4f04390ec61429e38dc7686d7fb",
+      "size": 143909
+    },
+    {
+      "name": "Member-native-acceptance.json",
+      "sha256": "a611c43bb117761956dec9ee586c22ef3a09aa9a6515a59bd42e27d143fff954",
+      "size": 819
+    },
+    {
+      "name": "Member-stable-policy-envelope.json",
+      "sha256": "9ee8917cc898706bc1e3bc88b31503b5ad39626eccb594f278869b582b07dfc5",
+      "size": 9465
+    },
+    {
+      "name": "Owner-catalog-update-envelope.json",
+      "sha256": "4cfa284d5eafa44c8abf37f60f1eebd9127b919e60537f7d9380594f47a864cf",
+      "size": 16459
+    },
+    {
+      "name": "FIMA-Macro-Owner-1.0.137.zip",
+      "sha256": "38fbec869f52b2aa14dbbbcba96706d9740290854fd8c5d2ef064df96f6b1fd0",
+      "size": 154803980
+    },
+    {
+      "name": "file-811430df60c1c4b2a70d94376d05e38898821cb77b9d30bb71f4595360a54d63",
+      "sha256": "811430df60c1c4b2a70d94376d05e38898821cb77b9d30bb71f4595360a54d63",
+      "size": 716
+    },
+    {
+      "name": "file-01c1857a46f58cfaab32e51a0c427b16c70a18a597ce7bea33d48ec1cbfe7e65",
+      "sha256": "01c1857a46f58cfaab32e51a0c427b16c70a18a597ce7bea33d48ec1cbfe7e65",
+      "size": 82679813
+    },
+    {
+      "name": "Owner-native-acceptance.json",
+      "sha256": "ee307026f7a52b47013d3a0baa8fb19ce5ca251caa6ad96c1bf21b92b2add59b",
+      "size": 824
+    },
+    {
+      "name": "Owner-stable-policy-envelope.json",
+      "sha256": "77e5cb50d51146d488325a8a444f02cf298aa685c9a4b5880f562119e78fbe87",
+      "size": 9473
+    },
+    {
+      "name": "runtime-ready-receipts.json",
+      "sha256": "13dcfebf6da12ca0f660ab5f9e3dfdebf531514dbbdf0de8a7855dcbdac74970",
+      "size": 1011
+    }
+  ],
+  "backendSha": "0c3717088011e58f198f258a5ee9767bac95d213",
+  "runtimeReady": "runtime-ready-receipts.json",
+  "nsisWaiver": {
+    "version": "1.0.137",
+    "installerSha256": "488ca5442f498637f1c3cee96d11c952e11294e1f9071f964c2406e5d7913bce",
+    "scope": "Only real NSIS clean-install and upgrade tests waived by owner. No runtime, backend, signature or integrity gate is waived."
+  },
+  "authenticode": "Not provided; pinned Ed25519 and RSA integrity verified.",
+  "acceptanceScope": "Unified version, signed immutable artifacts, isolated authenticated Macro runtime and production runtime readiness required; NSIS-only owner waiver."
+}

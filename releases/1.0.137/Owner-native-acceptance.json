@@ -1,0 +1,37 @@
+{
+  "authenticatedIssue": true,
+  "variant": "Owner",
+  "result": {
+    "ok": true,
+    "productId": "fima-macro-owner"
+  },
+  "version": "1.0.137",
+  "verifiedExecutableSha256": "01c1857a46f58cfaab32e51a0c427b16c70a18a597ce7bea33d48ec1cbfe7e65",
+  "native": {
+    "isolatedDesktop": true,
+    "inputDesktopSwitched": false,
+    "responsiveWindows": 4,
+    "runtimeReadyLogged": true,
+    "pid": 31568,
+    "exitCode": 0,
+    "windows": [
+      {
+        "responsive": true,
+        "title": ""
+      },
+      {
+        "responsive": true,
+        "title": ""
+      },
+      {
+        "responsive": true,
+        "title": "FIMA AI · SOON"
+      },
+      {
+        "responsive": true,
+        "title": "FIMA Macro Studio"
+      }
+    ]
+  },
+  "at": "2026-10-31T01:00:52.1251253+00:00"
+}

@@ -1,0 +1,12 @@
+{
+  "payload": {
+    "format": "fima-hub-release-v1",
+    "version": "1.0.137",
+    "sha256": "488ca5442f498637f1c3cee96d11c952e11294e1f9071f964c2406e5d7913bce",
+    "size": 107332081,
+    "downloadUrl": "/downloads/FIMA-Hub-Setup.exe",
+    "publisherThumbprint": null
+  },
+  "signatureAlgorithm": "ed25519",
+  "signature": "1uyR8XYj/mLqGwl4dMKDo3Rz4Y3OtMvA4oKyr1ZMUyqpz3IVHgx+lnIWKaQskoZd0N+rJwK5+RZOWSy/KkM2CQ=="
+}

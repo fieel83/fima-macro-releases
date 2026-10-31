@@ -3,7 +3,7 @@ import {createPublicKey,verify} from 'node:crypto';
 import assert from 'node:assert/strict';
 import {sha,verifyUnifiedMetadata,verifyActualVersion,verifyRuntimeReceipts} from './unified-release.mjs';
 async function main() {
-const directory='releases/1.0.136/';
+const directory='releases/1.0.137/';
 const read=name=>JSON.parse(fs.readFileSync(directory+name));
 const policy=read('policy.json');
 const variants=Object.fromEntries(policy.variants.map(v=>[v.label,read(v.envelope)]));
@@ -11,7 +11,7 @@ verifyUnifiedMetadata(policy,read(policy.manifest),variants);
 for(const name of [policy.manifest,...policy.variants.map(v=>v.envelope)]) {
  const b=fs.readFileSync(directory+name),a=policy.assets.find(a=>a.name===name);assert(a);assert.equal(sha(b),a.sha256);assert.equal(b.length,a.size);
 }
-assert.equal(policy.nsisWaiver.version,'1.0.136');assert.equal(policy.version,policy.nsisWaiver.version);
+assert.equal(policy.nsisWaiver.version,'1.0.137');assert.equal(policy.version,policy.nsisWaiver.version);
 assert.equal(policy.nsisWaiver.installerSha256,policy.installer.sha256);
 if(process.argv.includes('--verify-metadata')){console.log('PASS unified signed metadata; native/runtime and RSA policy gates still required');return;}
 const publicXml="<RSAKeyValue><Modulus>2OYlvluknnl2tefzkwCdPwlS3eCfQvRI7APs6fchs15x3wxX87mwF9ghp6vv6bSRSn2ZvNHsDoFDzYFtibAQxkyFO0Rk5ayQ9LDIeadu1xWDDxiB5cds0rkPk/SxY5ecFhvKsFpM2jVG+uT/48K9j3PdTkdDeR/GD3lTmLDQg+6UbRcLbvOsedvslEa484Ub36owcZ+Y4rai1jkGW8oF22NkiyPy7CfAnzxFVD/l5FU8ENfpl85cuiD9xi13e3LTB6f48gjTtmQPLjk94FkvxAaVLDqQq3ASVstxDCOaGLUpGuxjsSaoLJC/Df88tanmVv/wK9KgBxRrKOdq3qwQiT581U5RMCE8HBYv9TCjm192LjEFCKqKvCSkdbUxVvdACK+c5LAzuV3hg2nObv7FSaBeHXm2VCVmJTaylcnUAA20dtHwxsV3uK5CWIMehuUIrfDpJmLaVcvULz0d0S28PYn+9Mrp/ioXs3hxWL5Ei2xZbGs7uwz2T3tAZTiAHyn9</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>";
